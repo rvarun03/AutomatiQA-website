@@ -443,7 +443,7 @@
   .hero-stage .hero{ flex:1; display:flex; align-items:center; width:100%; padding:28px 0; }
   .hero-stage > .wrap[aria-label="Platform highlights"]{ flex:0 0 auto; width:100%; margin-top:auto; }
   .hero-grid{ grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr); gap:clamp(36px,5vw,72px); }
-  .hero h1{ font-size:clamp(3rem,5vw,4.65rem); letter-spacing:-.055em; line-height:.96; font-weight:800; }
+  .hero h1{ font-size:clamp(2.6rem,4.3vw,4rem); letter-spacing:-.055em; line-height:.96; font-weight:800; }
   .hero h1 .accent{ color:var(--teal-deep); }
   .hero p.lede{ max-width:57ch; font-size:1.08rem; }
   .hero-proof{ display:flex; flex-wrap:wrap; gap:18px; margin-top:20px; color:#64748b; font-size:.82rem; font-weight:600; }
@@ -508,7 +508,7 @@
   .reveal{ opacity:0; transform:translateY(18px); transition:opacity .65s ease,transform .65s ease; }
   .reveal.visible{ opacity:1; transform:none; }
   @media(max-width:1100px){
-    .hero-stage{padding:0 0 18px}.hero{padding:48px 0 32px}.hero-stage .hero{padding:28px 0}.hero h1{font-size:clamp(2.8rem,5.8vw,4.1rem)}
+    .hero-stage{padding:0 0 18px}.hero{padding:48px 0 32px}.hero-stage .hero{padding:28px 0}.hero h1{font-size:clamp(2.5rem,5vw,3.6rem)}
     .hero-grid{gap:32px}.console-body{padding-inline:18px}.line{font-size:.71rem}
     .metrics{grid-template-columns:1fr 1fr}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--line)}
   }
@@ -523,7 +523,7 @@
     .wrap{padding:0 20px}.nav-actions>.btn{display:none}.mobile-toggle{display:block}
     .nav-links.open{display:flex; position:absolute; top:76px; left:0; right:0; flex-direction:column; gap:0; padding:12px 20px 20px;
       background:#0c1017; border-bottom:1px solid #263247}.nav-links.open a{display:block;padding:12px}
-    .hero h1{font-size:clamp(2.6rem,13vw,3.8rem)}section{padding:64px 0}.metrics{grid-template-columns:1fr}.metric{padding:18px 20px;border-right:0!important;border-bottom:1px solid var(--line)!important}.metric:last-child{border-bottom:0!important}
+    .hero h1{font-size:clamp(2.3rem,11vw,3.3rem)}section{padding:64px 0}.metrics{grid-template-columns:1fr}.metric{padding:18px 20px;border-right:0!important;border-bottom:1px solid var(--line)!important}.metric:last-child{border-bottom:0!important}
     .metric::before{margin-bottom:12px}.cap-category{grid-template-columns:1fr;gap:18px;padding:32px 0}.cap-meta p{max-width:52ch}
     .cap-item{grid-template-columns:1fr;gap:6px;padding:16px 14px}.steps{gap:14px}.step{padding:24px}
     .check-list{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.cta{padding:38px 28px}
@@ -533,7 +533,7 @@
   @media(max-width:420px){
     .wrap{padding-inline:16px}.nav{min-height:68px}.nav .logo{font-size:1.05rem}.logo-mark{width:34px;height:34px}
     .nav-links.open{top:68px}.hero-stage{min-height:calc(100svh - 68px)}.hero-stage .hero{padding:38px 0 28px}
-    .eyebrow{font-size:.62rem;letter-spacing:.1em}.hero h1{font-size:clamp(2.45rem,12.5vw,3.2rem)}.hero p.lede{font-size:1rem}
+    .eyebrow{font-size:.62rem;letter-spacing:.1em}.hero h1{font-size:clamp(2.2rem,11.5vw,2.85rem)}.hero p.lede{font-size:1rem}
     .hero-actions{gap:10px;margin-top:25px}.hero-actions .btn{width:100%;justify-content:center}.hero-proof{gap:9px 14px}
     .console-bar{padding:13px 12px}.console-title{font-size:.58rem}.console-status{font-size:.5rem;padding:3px 6px}
     .console-body{min-height:0;padding:18px 13px 16px}.console-path{font-size:.55rem}.line{font-size:.61rem;grid-template-columns:14px minmax(0,1fr) auto;padding:7px 2px}.line .ms{font-size:.54rem}.console-summary{font-size:.53rem}
@@ -563,14 +563,14 @@
   <section class="hero" id="product">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">AI-native quality engineering</span>
+        
         <h1>Ship quality at the <span class="accent">speed of change.</span></h1>
-        <p class="lede">AutomatiQA brings requirements, AI-generated coverage, web and mobile automation, API testing, performance, execution, and reporting into one intelligent QA workspace.</p>
+        <p class="lede">AutomatiQA brings AI-assisted QA capabilities into a single workspace — reducing manual effort and keeping test assets connected from requirement to result.</p>
         <div class="hero-actions">
           <a href="#cta" class="btn btn-dark">Start building coverage <span aria-hidden="true">→</span></a>
           <a href="#how" class="btn btn-ghost">See how it works</a>
         </div>
-        <div class="hero-proof"><span>No-code recording</span><span>Human approval built in</span><span>Web + mobile</span></div>
+        
       </div>
 
       <div class="console" aria-hidden="true">
@@ -607,14 +607,20 @@
   <section class="dark-section" id="platforms">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="kicker">One quality platform</span>
         <h2>Every testing surface, connected.</h2>
         <p>Build coverage from the user interface down to the services beneath it, with shared projects, evidence, execution history, and reports.</p>
       </div>
       <div class="platform-grid">
-        <article class="platform-card reveal"><div class="platform-icon">◫</div><h3>Web automation</h3><p>Record real browser journeys, generate durable scripts, and replay flows with visual evidence across modern browsers.</p><div class="tag-list"><span class="tag">Playwright</span><span class="tag">Selenium</span><span class="tag">Cypress</span></div></article>
-        <article class="platform-card reveal"><div class="platform-icon">▯</div><h3>Mobile testing</h3><p>Inspect Android interfaces, capture native gestures, replay Appium flows, and validate real-device behavior from one timeline.</p><div class="tag-list"><span class="tag">Appium</span><span class="tag">Android</span><span class="tag">Real devices</span></div></article>
-        <article class="platform-card reveal"><div class="platform-icon">⌁</div><h3>API &amp; performance</h3><p>Design API checks, turn collections into execution suites, generate JMeter workloads, and surface actionable bottlenecks.</p><div class="tag-list"><span class="tag">REST</span><span class="tag">JMeter</span><span class="tag">Assertions</span></div></article>
+        <article class="platform-card reveal"><div class="platform-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3h7l4 4v14H7V3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5M10 12h5M10 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3>AI User Stories</h3><p>Generate structured user stories from BRDs, epics and requirements.</p></article>
+        <article class="platform-card reveal"><div class="platform-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="2" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="12" r="2" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="18" r="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 6h2a4 4 0 0 1 4 4v0a2 2 0 0 0 2 2M8 18h2a4 4 0 0 0 4-4v0a2 2 0 0 1 2-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3>AI Test Scenarios</h3><p>Create relevant scenarios from user stories, URLs and uploaded documents.</p></article>
+        <article class="platform-card reveal"><div class="platform-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 9 1.5 1.5L13 7.5M14.5 10H16M8.5 16l1.5 1.5 3-3M14.5 17H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>AI Test Cases</h3><p>Generate detailed test cases with coverage and requirement traceability.</p></article>
+        <article class="platform-card reveal"><div class="platform-icon">⌘</div><h3>Automation Script Generator</h3><p>Convert test cases into automation scripts for supported frameworks and languages.</p></article>
+        <article class="platform-card reveal"><div class="platform-icon">◫</div><h3>Web Record &amp; Play</h3><p>Record browser workflows and generate reusable automation without manual scripting.</p></article>
+        <article class="platform-card reveal"><div class="platform-icon">▯</div><h3>Mobile Record &amp; Play</h3><p>Record mobile app interactions and automate workflows on devices or emulators.</p></article>
+        <article class="platform-card reveal"><div class="platform-icon">◫</div><h3>UI Testing</h3><p>Validate web application behavior and user journeys with AI-assisted testing.</p></article>
+        <article class="platform-card reveal"><div class="platform-icon">⌁</div><h3>API Testing</h3><p>Validate endpoints, responses, contracts and business flows through API tests.</p></article>
+        <article class="platform-card reveal"><div class="platform-icon">↗</div><h3>API Performance Testing</h3><p>Measure response time, throughput and behavior under load.</p></article>
+        <article class="platform-card reveal"><div class="platform-icon">↗</div><h3>Web Performance Testing</h3><p>Measure application performance and identify slow or bottleneck areas.</p></article>
       </div>
     </div>
   </section>
@@ -622,8 +628,8 @@
   <section id="capabilities" class="soft-section">
     <div class="wrap">
       <div class="section-head">
-        <span class="kicker">Complete lifecycle coverage</span>
-        <span class="cap-count">18 features live in production</span>
+        
+        
         <h2>Everything a delivery team needs, in one platform</h2>
         <p>From the first user story to the final performance report, AutomatiQA covers the full testing lifecycle — so nothing has to be stitched together across separate tools.</p>
       </div>
@@ -755,7 +761,6 @@
   <section id="security" class="soft-section">
     <div class="wrap security-grid">
       <div class="section-head reveal" style="margin-bottom:0">
-        <span class="kicker">Control without friction</span>
         <h2>Built for accountable quality.</h2>
         <p>AI accelerates the work while your team stays in control. Review gates, project roles, traceability, and execution evidence keep quality decisions visible.</p>
         <div class="hero-actions"><a href="#cta" class="btn btn-dark">Talk to our QA team</a></div>
@@ -792,7 +797,7 @@
 
   <section class="soft-section" id="faq">
     <div class="wrap faq">
-      <div class="section-head reveal"><span class="kicker">Frequently asked</span><h2>Everything you need to get started.</h2></div>
+      <div class="section-head reveal"><h2>Everything you need to get started.</h2></div>
       <details class="reveal"><summary>Does AutomatiQA replace QA engineers?</summary><p>No. It removes repetitive drafting, scripting, and reporting work so QA engineers can focus on risk, exploratory testing, product behavior, and release decisions.</p></details>
       <details class="reveal"><summary>Can we use existing manual test cases?</summary><p>Yes. Import and organize existing cases alongside AI-generated scenarios, then maintain execution status and traceability in the same project.</p></details>
       <details class="reveal"><summary>Does it support both web and mobile applications?</summary><p>Yes. AutomatiQA supports browser recording and playback as well as native Android inspection, gesture capture, Appium automation, and real-device execution.</p></details>
